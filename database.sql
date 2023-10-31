@@ -19,3 +19,15 @@ CREATE TABLE staff_users (
     department VARCHAR(50),
     UNIQUE KEY (staff_number)
 );
+
+CREATE TABLE IF NOT EXISTS record (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    firstname VARCHAR(255),
+    lastname VARCHAR(255),
+    date DATE,
+    day_of_week VARCHAR(255),
+    time TIME,
+    timestamp INT,
+    datetime DATETIME
+)
+"""
